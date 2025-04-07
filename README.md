@@ -25,7 +25,7 @@ curl https://kazepublic.blob.core.windows.net/cvefree/data.json --output data.js
 | cvssv2	|Decimal [0.0-10.0]	|Version 2 of the official defacto severity scoring of CVEs, produced by "experts" filling out ordinal scales. Can use Version 2 as compromise if version 3 doesn't exist.|
 |cvssv3	|Decimal [0.0-10.0]	|Version 3 of the official defacto severity scoring of CVEs, produced by "experts" filling out ordinal scales. Use Version 3 over 2 when possible.|
 |epss	|Decimal [0.0-1.0]	|Predictive score that a CVE is exploited in the next 30 days, produced by a gradient boosted machine learning model.|
-|v_score	|decimal [0.0-1.0]	|Proprietary vulnerability score - Taking a holistic view of vulnerability landscape.|
+|v_score	|decimal [0.0-1.0]	|Vulnerability risk score - Taking a holistic view of the vulnerability landscape using a transparent and explainable scoring system.|
 |cti_count	|Number	|Count of the number of times a CVE has been found in a collection of monitored cyber threat intelligence report and articles feeds.|
 |social_media_audience	|Number	|Estimate for the number of people who have seen a CVE being discussed on social media platforms (currently Twitter & Reddit).|
 |software_cpes	|[String]	|List of the CPEs that are effected by the CVE vunlreabuility. CPE is the common platform enumeration, a standard for identifying software and hardware. (Currently file too large for github, use alternative storage end-point to get this).|
